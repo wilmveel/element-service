@@ -1,0 +1,68 @@
+[
+	{
+		"group": "panel",
+		"name": "Panel",
+		"template": "panel",
+		"data": {
+			"title": "Title panel",
+			"color": "default"
+		},
+		"id": 1386746908980,
+		"elements": [
+			{
+				"group": "form",
+				"name": "Form",
+				"template": "form",
+				"data": {
+					"orientation": ""
+				},
+				"id": 1386746935234,
+				"elements": [
+					{
+						"group": "input",
+						"name": "Input",
+						"template": "input",
+						"data": {
+							"label": "Input label",
+							"placeholder": "Input placeholder",
+							"type": "text",
+							"columns": 3,
+							"orientation": "",
+							"columnsInv": 9
+						},
+						"attributes": {
+							"model": {
+								"ngModel": "data.init1234"
+							},
+							"validation": {
+								"ngMaxlength": 6
+							}
+						},
+						"id": 1386941646173
+					},
+					{
+						"group": "input",
+						"name": "Button",
+						"template": "button",
+						"data": {
+							"label": "Button",
+							"color": "default",
+							"size": "",
+							"ngclick": "alert('test')",
+							"icon": "",
+							"block": 0,
+							"orientation": "",
+							"columns": 3
+						},
+						"attributes": {
+							"click": {
+								"ngClick": "send()"
+							}
+						},
+						"id": 1386945347444
+					}
+				]
+			}
+		]
+	}
+]

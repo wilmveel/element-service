@@ -1,0 +1,145 @@
+[
+	{
+		"id": 1,
+		"name": "Panel",
+		"template": "panel",
+		"data": {
+			"title": "Persoonsgegevens",
+			"color": "primary"
+		},
+		"elements": [
+			{
+				"id": 11,
+				"name": "Form",
+				"template": "form-horizontal",
+				"data": {
+					"orientation": "horizontal"
+				},
+				"elements": [
+					{
+						"id": 112,
+						"name": "Input Callname",
+						"template": "input-horizontal",
+						"data": {
+							"orientation": "horizontal",
+							"label": "Roepnaam213",
+							"placeholder": "Roepnaam",
+							"columns": 4,
+							"columnsInv": 8,
+							"text": ""
+						},
+						"attributes": {
+							"model": {
+								"ngModel": "data.callname"
+							},
+							"validation": {
+								"ngMinlength": 3
+							}
+						}
+					},
+					{
+						"id": 111,
+						"name": "Input Initiales",
+						"template": "input-horizontal",
+						"data": {
+							"orientation": "horizontal",
+							"label": "Voorletter(s)",
+							"placeholder": "Voorletter(s)",
+							"columns": 4,
+							"columnsInv": 8,
+							"text": ""
+						},
+						"attributes": {
+							"model": {
+								"ngModel": "data.initiales"
+							},
+							"validation": {
+								"ngRequired": true
+							}
+						}
+					},
+					{
+						"id": 113,
+						"name": "Input",
+						"template": "input-horizontal",
+						"data": {
+							"orientation": "horizontal",
+							"label": "Voornaam",
+							"placeholder": "Voornaam",
+							"columns": 4,
+							"columnsInv": 8,
+							"text": ""
+						},
+						"attributes": {
+							"model": {
+								"ngModel": "data.firstname"
+							},
+							"validation": {
+								"ngMaxlength": 6
+							}
+						}
+					},
+					{
+						"id": 114,
+						"name": "Input Prefix",
+						"template": "input-horizontal",
+						"data": {
+							"orientation": "horizontal",
+							"label": "Tussenvoegsel(s)",
+							"placeholder": "Tussenvoegsel(s)",
+							"columns": 4,
+							"columnsInv": 8,
+							"text": ""
+						},
+						"attributes": {
+							"model": {
+								"ngModel": "data.prefix"
+							},
+							"validation": {
+								"ngMinlength": 3,
+								"ngMaxlength": 6
+							}
+						}
+					},
+					{
+						"id": 115,
+						"name": "Input Lastname",
+						"template": "input-horizontal",
+						"data": {
+							"orientation": "horizontal",
+							"label": "Achternaam",
+							"placeholder": "Achternaam",
+							"columns": 4,
+							"columnsInv": 8,
+							"text": "Dit is de achternaam zoals vermed in pasport, identiteitskaar of rijbewijs"
+						},
+						"attributes": {
+							"model": {
+								"ngModel": "data.lastname"
+							}
+						}
+					},
+					{
+						"id": 116,
+						"name": "Submit",
+						"template": "button-horizontal",
+						"data": {
+							"orientation": "horizontal",
+							"label": "Test",
+							"color": "default",
+							"columns": 4,
+							"columnsInv": 8
+						},
+						"attributes": {
+							"click": {
+								"ngClick": "send()"
+							},
+							"validation": {
+							}
+						}
+					}
+				]
+			}
+		]
+	}
+]

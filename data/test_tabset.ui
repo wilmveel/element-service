@@ -1,0 +1,37 @@
+[
+	{
+		"group": "tab",
+		"name": "Tabset",
+		"template": "tabset",
+		"id": 1386946548921,
+		"elements": [
+			{
+				"group": "tab",
+				"name": "Tab",
+				"template": "tab",
+				"data": {
+					"title": "Heading123"
+				},
+				"id": 1386946750982
+			},
+			{
+				"group": "tab",
+				"name": "Tab",
+				"template": "tab",
+				"data": {
+					"title": "Heading456"
+				},
+				"id": 1386946783274
+			},
+			{
+				"group": "tab",
+				"name": "Tab",
+				"template": "tab",
+				"data": {
+					"title": "Heading789"
+				},
+				"id": 1386946796472
+			}
+		]
+	}
+]
